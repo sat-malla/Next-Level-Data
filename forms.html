@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Forms - 10-Day Questionaire</title>
+    <header>10-Day Questionaire</header>
+</head>
+<body>
+
+    <div class="topbar">
+        <a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a>
+        <a class="active" href="forms.html"><i class="fa fa-fw fa-wpforms"></i>Forms</a>
+        <a href="data.html"><i class="fa fa-fw fa-table"></i>Data</a>
+        <a href="about.html"><i class="fa fa-fw fa-user"></i>About</a>
+        <div class="dropdown">
+            <button class="dropbtn">More 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="contactme.html"><i class="fa fa-fw fa-envelope"></i> Contact Me</a>
+              <a href="faq.html"><i class="fa fa-fw fa-question-circle"></i> FAQ</a>
+              <a href="announcements.html"><i class="fa fa-fw fa-bullhorn"></i> Announcements</a>
+            </div>
+          </div>
+      </div>
+      
+      <div style="padding-left:16px">
+        <h1 class="h1"><b>FORMS</b></h1>
+        <div class="container">
+        <img src="data4.jpg" alt="Data" width="530" height="430">
+        <div>
+            <div class="div">
+                <h2>What is this?</h2>
+                <p>These are the forms that will help adjust my data. If you want to be part of my data, fill up one of the forms below. The responses will be anonymous but will help my data a lot. There will be more forms to come so stay tuned for more. There will be two forms filled with very weird questions. Definitely, these are not for business, but something I want to try out for fun. If you want to check on our previous and current data of the forms, click the button below or click on <em>Data</em> on the tob bar. If you want to see if there are any new upcoming forms, click the button below or click <em>More &rarr; Announcemements</em> on the top bar. Have fun!</p>
+                <a href="data.html"><button class="data" type="button"><b>Data</b></button></a>
+                <a href="announcements.html"><button class="announcements" type="button"><b>Announcements</b></button></a>
+            </div>
+        </div>
+        </div>
+
+        <div class="parallax" id="parallax1"></div>
+
+        <div class="container2">
+            <div>
+                <div class="div2">
+                    <h2>Form 1</h2>
+                    <form name="submit-to-google-sheet" id="form1">
+                        <label for="fname" id="day1">If you became the president, would you get mcdonalds or kfc?</label><br>
+                        <input type="text" id="name" name="q1"><br>
+                        <label for="lname" id="day2">Would you like to fly a paper airplane or a real airplane?</label><br>
+                        <input type="text" id="email" name="q2"><br>
+                        <label for="lname"  id="day3">Would you like to go to New York or Canada?</label><br>
+                        <input type="text" id="subject" name="q3"><br><br>
+                        <label for="lname" id="day4">Do you prefer basketballs to be orange or green?</label><br>
+                        <input type="text" id="subject" name="q4"><br><br>
+                        <label for="lname" id="day5">Is Java a coding language or is it coffee?</label><br>
+                        <input type="text" id="subject" name="q5"><br><br>
+                        <input type="submit" value="Submit" id="submit1">
+                        <input type="button" onclick="myFunction()" value="Reset" id="reset1">
+                      </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="parallax" id="parallax2"></div>
+
+        <div class="container3">
+            <div>
+                <div class="div3">
+                    <h2>Form 2</h2>
+                    <form action="/action_page.php" id="form2">
+                        <label for="fname" id="day6">Cafeteria serving burgers or restaurant serving broccoli?</label><br>
+                        <input type="text" id="name" name="q6"><br>
+                        <label for="lname" id="day7">If you had a pool, would you throw your computer or your favorite brownies into the pool?</label><br>
+                        <input type="text" id="email" name="q7"><br>
+                        <label for="lname"  id="day8">If you had magical powers, would you make a dog quack or make a cat oink?</label><br>
+                        <input type="text" id="subject" name="q8"><br><br>
+                        <label for="lname" id="day9">Would you fly on a Ferrari or your pet chicken?</label><br>
+                        <input type="text" id="subject" name="q9"><br><br>
+                        <label for="lname" id="day10">If you had a purple soccer ball, would you give it to your great grandfather or your great grandson?</label><br>
+                        <input type="text" id="subject" name="q10"><br><br>
+                        <input type="submit" onclick="myFunction1()" value="Submit" id="submit">
+                        <input type="button" onclick="myFunction()" value="Reset" id="reset1">
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="footerFormContainer">
+            <p><b>2021 Sathvik Malla</b></p>
+          </div>
+
+          <script src="forms.js"></script>
+</body>
+</html>
