@@ -6,6 +6,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Forms - 10-Day Questionaire</title>
     <header>10-Day Questionaire</header>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
+function myFunction() {
+  document.getElementById("myForm").reset();
+  document.getElementById("myForm2").reset();
+}
+
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/8123/',
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+          alert("Nice. Your data will be added to my live data soon. :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+
+function SubForm1 (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/8124/',
+        type:'post',
+        data:$("#myForm2").serializeArray(),
+        success: function(){
+          alert("Nice. Your data will be added to my live data soon. :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+</script>
 </head>
 <body>
 
@@ -46,20 +84,20 @@
             <div>
                 <div class="div2">
                     <h2>Form 1</h2>
-                    <form name="submit-to-google-sheet" id="form1">
-                        <label for="fname" id="day1">If you became the president, would you get mcdonalds or kfc?</label><br>
-                        <input type="text" id="name" name="q1"><br>
-                        <label for="lname" id="day2">Would you like to fly a paper airplane or a real airplane?</label><br>
-                        <input type="text" id="email" name="q2"><br>
-                        <label for="lname"  id="day3">Would you like to go to New York or Canada?</label><br>
-                        <input type="text" id="subject" name="q3"><br><br>
-                        <label for="lname" id="day4">Do you prefer basketballs to be orange or green?</label><br>
-                        <input type="text" id="subject" name="q4"><br><br>
-                        <label for="lname" id="day5">Is Java a coding language or is it coffee?</label><br>
-                        <input type="text" id="subject" name="q5"><br><br>
-                        <input type="submit" value="Submit" id="submit1">
-                        <input type="button" onclick="myFunction()" value="Reset" id="reset1">
+                    <form id="myForm">
+                        <label id="day1">If you became the president, would you get mcdonalds or kfc?</label><br>
+                        <input type="text" id="q1" name="q1"><br>
+                        <label id="day2">Would you like to fly a paper airplane or a real airplane?</label><br>
+                        <input type="text" id="q2" name="q2"><br>
+                        <label id="day3">Would you like to go to New York or Canada?</label><br>
+                        <input type="text" id="q3" name="q3"><br><br>
+                        <label id="day4">Do you prefer basketballs to be orange or green?</label><br>
+                        <input type="text" id="q4" name="q4"><br><br>
+                        <label id="day5">Is Java a coding language or is it coffee?</label><br>
+                        <input type="text" id="q5" name="q5"><br><br>
                       </form>
+                      <input type="button" onclick="myFunction()" value="Reset" id="reset1">
+                      <button onclick="SubForm()" id="submit1">Submit</button>
                 </div>
             </div>
         </div>
@@ -70,20 +108,20 @@
             <div>
                 <div class="div3">
                     <h2>Form 2</h2>
-                    <form action="/action_page.php" id="form2">
+                    <form id="myForm2">
                         <label for="fname" id="day6">Cafeteria serving burgers or restaurant serving broccoli?</label><br>
-                        <input type="text" id="name" name="q6"><br>
+                        <input type="text" id="q6" name="q6"><br>
                         <label for="lname" id="day7">If you had a pool, would you throw your computer or your favorite brownies into the pool?</label><br>
-                        <input type="text" id="email" name="q7"><br>
+                        <input type="text" id="q7" name="q7"><br>
                         <label for="lname"  id="day8">If you had magical powers, would you make a dog quack or make a cat oink?</label><br>
-                        <input type="text" id="subject" name="q8"><br><br>
+                        <input type="text" id="q8" name="q8"><br><br>
                         <label for="lname" id="day9">Would you fly on a Ferrari or your pet chicken?</label><br>
-                        <input type="text" id="subject" name="q9"><br><br>
+                        <input type="text" id="q9" name="q9"><br><br>
                         <label for="lname" id="day10">If you had a purple soccer ball, would you give it to your great grandfather or your great grandson?</label><br>
-                        <input type="text" id="subject" name="q10"><br><br>
-                        <input type="submit" onclick="myFunction1()" value="Submit" id="submit">
-                        <input type="button" onclick="myFunction()" value="Reset" id="reset1">
+                        <input type="text" id="q10" name="q10"><br><br>
                     </form>
+                    <input type="button" onclick="myFunction()" value="Reset" id="reset1">
+                    <button onclick="SubForm1()" id="submit">Submit</button>
                 </div>
             </div>
         </div>
@@ -91,7 +129,5 @@
         <div id="footerFormContainer">
             <p><b>2021 Sathvik Malla</b></p>
           </div>
-
-          <script src="forms.js"></script>
 </body>
 </html>
