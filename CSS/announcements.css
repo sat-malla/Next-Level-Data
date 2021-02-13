@@ -224,3 +224,7 @@ body {
   background-color: #aa1945;
   color: #e9eae0;
 }
+
+#hr {
+  border: 2px solid #e9eae0;
+}
