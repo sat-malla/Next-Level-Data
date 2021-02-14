@@ -6,6 +6,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>10-Day Questionaire</title>
     <header>10-Day Questionaire</header>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script>
+
+function SubForm() {
+  $.ajax({
+    url: "https://api.apispreadsheets.com/data/8126/",
+    type: "post",
+    data: $("#myForm").serializeArray(),
+    success: function () {
+      alert("Nice. We will respond to you as soon as possible via email. :)");
+    },
+    error: function () {
+      alert("There was an error :(");
+    },
+  });
+}
+    </script>
 </head>
 <body>
 
@@ -59,18 +79,18 @@
             <div>
                 <div class="div2">
                     <h2>Contact Me</h2>
-                    <p id="p">Is your question already answered? Click <a href="faq.html">here</a> or hover over More and click FAQ on the navigation bar. If you don't want to use this, click <a href="mailto:sathvikmalla17@gmail.com">here.</a></p>
-                    <form action="/action_page.php" class="contact" required>
-                        <label for="fname" id="name1">Name:</label><br>
-                        <input type="text" id="name" name="fname" required><br>
-                        <label for="lname" id="email1">Email:</label><br>
-                        <input type="text" id="email" name="lname" required><br>
-                        <label for="lname"  id="subject1">Subject:</label><br>
-                        <input type="text" id="subject" name="lname" required><br><br>
-                        <label for="lname" id="message1">Message:</label><br>
-                        <textarea></textarea><br><br>
-                        <input type="submit" value="Submit" id="submit">
+                    <p id="p">Is your question already answered? Click <a href="faq.html">here</a> or click <em>More &rarr; FAQ</em> on the navigation bar. If you don't want to use this, click <a href="mailto:sathvikmalla17@gmail.com">here.</a> Please be patient as it takes a few seconds to process when submitted. Keep in mind that you will not receive your email if you don't put your email or if most of the form is blank.</p>
+                    <form id="myForm" name="myForm" class="contact">
+                        <label for="fname" id="name1">Name:*</label><br>
+                        <input type="text" id="name" name="name" required><br>
+                        <label for="lname" id="email1">Email:*</label><br>
+                        <input type="text" id="email" name="email" required><br>
+                        <label for="lname"  id="subject1">Subject:*</label><br>
+                        <input type="text" id="subject" name="subject" required><br><br>
+                        <label for="lname" id="message1">Message:*</label><br>
+                        <textarea name="message" required></textarea><br><br>
                       </form>
+                      <button onclick="SubForm()" id="submit" type="submit" required>Submit</button>
                 </div>
             </div>
         </div>
@@ -78,7 +98,5 @@
         <div id="footerFormContainer">
             <p><b>2021 Sathvik Malla</b></p>
           </div>
-
-
 </body>
 </html>
