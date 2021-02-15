@@ -7,7 +7,9 @@
 <title>FAQ - 10-Day Questionaire</title>
     <header>10-Day Questionaire</header>
 </head>
-<body>
+<body onload="myFunction1()" style="margin:0;">
+
+  <div id="loader"></div>
 
     <div class="topbar">
         <a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a>
@@ -22,11 +24,12 @@
               <a href="contactme.html"><i class="fa fa-fw fa-envelope"></i> Contact Me</a>
               <a href="faq.html"><i class="fa fa-fw fa-question-circle"></i> FAQ</a>
               <a href="announcements.html"><i class="fa fa-fw fa-bullhorn"></i> Announcements</a>
+              <a href="games.html"><i class="fa fa-fw fa-gamepad"></i> Games</a>
             </div>
           </div>
       </div>
            
-      <div style="padding-left:16px">
+      <div style="padding-left:16px" class="animate-bottom">
         <h1 class="h1"><b>FAQ</b></h1>
 
         <div class="parallax" id="parallax1"></div>
@@ -50,6 +53,11 @@
                 <button class="accordion">Will the forms close in this website?</button>
                 <div class="panel">
                 <p>The forms will not close in this website. You are welcome to fill up a form anytime you want.</p>
+                </div>
+
+                <button class="accordion">Why is my response not showing up in the live data?</button>
+                <div class="panel">
+                <p>When you submit a form, it will go to a google sheet. The google sheet will store that data, but the google sheet in the live data won't update yet unfortuanetely. It may take some time for the data to appear in the live data section. But don't worry, it will show up soon.</p>
                 </div>
             </div>
         </div>
