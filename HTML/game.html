@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Game - 10-Day Questionaire</title>
+<style>
+canvas {
+    border: 1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+
+#goBack {
+  background-color: #e7625f;
+  border: none;
+  color: #e9eae0;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 5px 2px;
+  cursor: pointer;
+  border: 4px solid black;
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+#goBack:hover {
+  background-color: #e9eae0;
+  color: #aa1945;
+}
+
+
+#goBack1 {
+  background-color: #e7625f;
+  border: none;
+  color: #e9eae0;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 5px 2px;
+  cursor: pointer;
+  border: 4px solid black;
+  border-radius: 8px;
+  font-weight: 800;
+  margin-right: 95px;
+}
+
+#goBack1:hover {
+  background-color: #e9eae0;
+  color: #aa1945;
+}
+</style>
+</head>
+<body onload="startGame()">
+<div style="text-align:center;width:480px;">
+    <button id="goBack" onmousedown="move('up')" onmouseup="clearmove()" ontouchstart="move('up')"><i class="fa fa-fw fa-arrow-up"></i></button><br><br>
+    <button id="goBack1" onmousedown="move('left')" onmouseup="clearmove()" ontouchstart="move('left')"><i class="fa fa-fw fa-arrow-left"></i></button>
+    <button id="goBack" onmousedown="move('right')" onmouseup="clearmove()" ontouchstart="move('right')"><i class="fa fa-fw fa-arrow-right"></i></button><br><br>
+    <button id="goBack" onmousedown="move('down')" onmouseup="clearmove()" ontouchstart="move('down')"><i class="fa fa-fw fa-arrow-down"></i></button>
+  </div>
+<h3>Have fun playing it! Reload the page to restart.</h3>
+<a href="havefun.html"><button id="goBack">Go back!</button></a>
+
+<script src="game.js"></script>
+</body>
+</html>
