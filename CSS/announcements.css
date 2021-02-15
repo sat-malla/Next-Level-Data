@@ -104,7 +104,7 @@ body {
   display: flex;
   background-color: #e7625f;
   margin-right: 20px;
-  height: 560px;
+  height: 1000px;
   align-content: center;
   padding-left: 220px;
 }
@@ -230,6 +230,8 @@ body {
 
 #hr {
   border: 2px solid #e9eae0;
+  margin-bottom: 30px;
+  margin-top: 15px;
 }
 
 #loader {
