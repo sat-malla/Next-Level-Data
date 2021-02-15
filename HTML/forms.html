@@ -11,10 +11,21 @@
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
 <script>
+var myVar;
+
+function myFunction1() {
+  myVar = setTimeout(showPage, 500);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
 function myFunction() {
   document.getElementById("myForm").reset();
   document.getElementById("myForm2").reset();
 }
+
 
 function SubForm (){
     $.ajax({
@@ -45,7 +56,9 @@ function SubForm1 (){
 }
 </script>
 </head>
-<body>
+<body onload="myFunction1()" style="margin:0;">
+
+    <div id="loader"></div>
 
     <div class="topbar">
         <a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a>
@@ -60,13 +73,14 @@ function SubForm1 (){
               <a href="contactme.html"><i class="fa fa-fw fa-envelope"></i> Contact Me</a>
               <a href="faq.html"><i class="fa fa-fw fa-question-circle"></i> FAQ</a>
               <a href="announcements.html"><i class="fa fa-fw fa-bullhorn"></i> Announcements</a>
+              <a href="havefun.html"><i class="fa fa-fw fa-gamepad"></i> Have Fun!</a>
             </div>
           </div>
       </div>
       
-      <div style="padding-left:16px">
+      <div style="padding-left:16px;" class="animate-bottom">
         <h1 class="h1"><b>FORMS</b></h1>
-        <div class="container">
+        <div class="container"  >
         <img src="data4.jpg" alt="Data" width="530" height="430">
         <div>
             <div class="div">
