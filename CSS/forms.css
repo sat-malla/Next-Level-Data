@@ -169,25 +169,6 @@ body {
   }
 }
 
-.about {
-  background-color: #e7625f;
-  border: none;
-  color: #e9eae0;
-  padding: 8px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 25px;
-  margin: 40px 2px;
-  cursor: pointer;
-  border: 4px solid black;
-}
-
-.about:hover {
-  background-color: #e9eae0;
-  color: #aa1945;
-}
-
 .data {
   background-color: #e9eae0;
   border: none;
@@ -201,6 +182,7 @@ body {
   cursor: pointer;
   border: 4px solid black;
   margin-left: 1px;
+  border-radius: 8px;
 }
 
 .data:hover {
@@ -221,6 +203,7 @@ body {
   cursor: pointer;
   border: 4px solid black;
   margin-left: 30px;
+  border-radius: 8px;
 }
 
 .announcements:hover {
@@ -274,6 +257,7 @@ textarea {
 #q9,
 #q10 {
   font-size: 23px;
+  border-radius: 8px;
 }
 
 #submit {
@@ -290,6 +274,7 @@ textarea {
   border: 4px solid black;
   font-weight: bold;
   margin-left: 40px;
+  border-radius: 8px;
 }
 
 #submit:hover {
@@ -312,6 +297,7 @@ textarea {
   font-weight: bold;
   margin-left: 30px;
   margin-top: -300px;
+  border-radius: 8px;
 }
 
 #submit1:hover {
@@ -332,6 +318,7 @@ textarea {
   border: 4px solid black;
   font-weight: bold;
   margin-left: 200px;
+  border-radius: 8px;
 }
 
 #reset1:hover {
@@ -386,4 +373,69 @@ textarea {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #aa1945;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add animation to "page content" */
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 4s;
+  animation-name: animatebottom;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
 }
