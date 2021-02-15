@@ -5,12 +5,23 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>10-Day Questionaire</title>
-    <header>10-Day Questionaire</header>
+<header>10-Day Questionaire</header>
     <script
     src="https://code.jquery.com/jquery-3.4.1.js"
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
     <script>
+var myVar;
+
+function myFunction1() {
+  myVar = setTimeout(showPage, 500);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+
 
 function SubForm() {
   $.ajax({
@@ -27,7 +38,9 @@ function SubForm() {
 }
     </script>
 </head>
-<body>
+<body onload="myFunction1()" style="margin:0;">
+
+    <div id="loader"></div>
 
     <div class="topbar">
         <a class="active" href="home.html"><i class="fa fa-fw fa-home"></i>Home</a>
@@ -42,11 +55,12 @@ function SubForm() {
               <a href="contactme.html"><i class="fa fa-fw fa-envelope"></i> Contact Me</a>
               <a href="faq.html"><i class="fa fa-fw fa-question-circle"></i> FAQ</a>
               <a href="announcements.html"><i class="fa fa-fw fa-bullhorn"></i> Announcements</a>
+              <a href="games.html"><i class="fa fa-fw fa-gamepad"></i> Games</a>
             </div>
           </div>
       </div>
       
-      <div style="padding-left:16px">
+      <div style="padding-left:16px" id="myDiv" class="animate-bottom">
         <h1 class="h1"><b>HOME</b></h1>
         <div class="container">
         <img src="data.jpg" alt="Data" width="510" height="410">
