@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="havefun.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Have Fun! - 10-Day Questionaire</title>
+    <header>10-Day Questionaire</header>
+    <script>
+
+        var myVar;
+        
+        function myFunction1() {
+          myVar = setTimeout(showPage, 500);
+        }
+        
+        function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }
+
+        function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+
+    </script>
+</head>
+<body onload="myFunction1()" style="margin:0;">
+
+    <div id="loader"></div>
+
+    <div class="topbar">
+        <a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="forms.html"><i class="fa fa-fw fa-wpforms"></i>Forms</a>
+        <a href="data.html"><i class="fa fa-fw fa-table"></i>Data</a>
+        <a href="about.html"><i class="fa fa-fw fa-user"></i>About</a>
+        <div class="dropdown">
+            <button class="dropbtn">More 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="contactme.html"><i class="fa fa-fw fa-envelope"></i> Contact Me</a>
+              <a href="faq.html"><i class="fa fa-fw fa-question-circle"></i> FAQ</a>
+              <a href="announcements.html"><i class="fa fa-fw fa-bullhorn"></i> Announcements</a>
+              <a href="havefun.html"><i class="fa fa-fw fa-gamepad"></i> Have Fun!</a>
+            </div>
+          </div>
+      </div>
+      
+      <div style="padding-left:16px" class="animate-bottom">
+        <h1 class="h1"><b>HAVE FUN!</b></h1>
+
+
+        <div class="container">
+        <img src="data20.jpg" alt="Data" width="510" height="380">
+        <div>
+            <div class="div">
+                <h2>What is this?</h2>
+                <p>If you think this website needs some entertainment, I have it here. You can play some fun games if you have nothing else to do on this website. I have provided you with many challenging games to bounce up your excitement. But, it won't be as great as the one on mobile phones. Remember, the games are not just one of the things that are in this website. Go ahead and fill up a form or check on our live data! </p>
+                <a href="forms.html"><button class="form" type="button"><b>Forms</b></button></a>
+                <a href="data.html"><button class="data" type="button"><b>Data</b></button></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax" id="parallax2"></div>
+
+
+    <div class="container2">
+        <div>
+            <div class="div2">
+                <h1 id="h1">Drag & Drop</h1>
+                <h4>Programming is:</h4>
+
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <br>
+                <img id="drag1" src="awesome.jpg" draggable="true" ondragstart="drag(event)" width="336" height="100">
+                <img id="drag2" src="eh.jpg" draggable="true" ondragstart="drag(event)" width="336" height="100">
+                <img id="drag3" src="bad.jpg" draggable="true" ondragstart="drag(event)" width="336" height="100">
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax" id="parallax3"></div>
+
+    <div class="container3">
+        <div>
+            <div class="div3">
+                <h1 id="h1">Choose which</h1>
+                <h3>Which is better? Java or Javascript?:</h3>
+                <img src="java.jpg" alt="Java" width="300px" style="bottom: 30%; display: inline-block;">
+                <div class="toggle">
+                    <input type="checkbox" class="check">
+                    <b class="b switch"></b>
+                    <b class="b track"></b>
+                  </div>
+                <img src="javascript.jpg" alt="Javascript" width="300px" style="margin-left: 450px; margin-top: -1900px; padding-bottom: 260px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax" id="parallax4"></div>
+
+    <div class="container4" onload="startGame()">
+        <div>
+            <div class="div4" >
+                <h1 id="h1">Flappy Square</h1>
+                <h3 style="text-align: center;">If you don't like the things above, here is a game you might enjoy.</h3>
+                <a href="game.html"><button id="game">Go to Game!</button></a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+        <div id="footerFormContainer">
+            <p><b>2021 Sathvik Malla</b></p>
+          </div>
+
+
+</body>
+</html>
