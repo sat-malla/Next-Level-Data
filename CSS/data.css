@@ -143,7 +143,7 @@ body {
   display: flex;
   background-color: #fff3d9;
   margin-right: 20px;
-  height: 690px;
+  height: 890px;
   width: 1389px;
   align-content: center;
   padding-left: 220px;
@@ -217,85 +217,6 @@ textarea {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#day6 {
-  font-size: 23px;
-}
-
-#day7 {
-  font-size: 23px;
-}
-#day8 {
-  font-size: 23px;
-}
-
-#day9 {
-  font-size: 23px;
-}
-
-#day10 {
-  font-size: 23px;
-}
-
-#name {
-  font-size: 20px;
-}
-
-#email {
-  font-size: 20px;
-}
-
-#subject {
-  font-size: 20px;
-}
-
-#message {
-  height: 200px;
-}
-
-#submit {
-  background-color: #aa1945;
-  border: none;
-  color: #f9f1f0;
-  padding: 8px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 25px;
-  margin: 2px 2px;
-  cursor: pointer;
-  border: 4px solid black;
-  font-weight: bold;
-  margin-left: 380px;
-}
-
-#submit:hover {
-  background-color: #f9f1f0;
-  color: #aa1945;
-  font-weight: bold;
-}
-
-#submit1 {
-  background-color: #aa1945;
-  border: none;
-  color: #f9f1f0;
-  padding: 8px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 25px;
-  margin: 10px 2px;
-  cursor: pointer;
-  border: 4px solid black;
-  font-weight: bold;
-  margin-left: 280px;
-}
-
-#submit1:hover {
-  background-color: #f9f1f0;
-  color: #aa1945;
-  font-weight: bold;
-}
-
 #footerFormContainer {
   text-align: center;
   margin-top: 40px;
@@ -314,6 +235,7 @@ textarea {
   margin: 12px 2px;
   cursor: pointer;
   border: 4px solid black;
+  border-radius: 8px;
 }
 
 .form:hover {
@@ -489,4 +411,69 @@ th,
 td {
   padding: 14px;
   text-align: left;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #aa1945;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add animation to "page content" */
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 4s;
+  animation-name: animatebottom;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
 }
