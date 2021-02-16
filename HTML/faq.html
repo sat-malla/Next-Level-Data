@@ -2,71 +2,24 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="faq.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>Forms - 10-Day Questionaire</title>
-    <header>10-Day Questionaire</header>
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
-<script>
-var myVar;
-
-function myFunction1() {
-  myVar = setTimeout(showPage, 500);
-}
-
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
-}
-function myFunction() {
-  document.getElementById("myForm").reset();
-  document.getElementById("myForm2").reset();
-}
-
-
-function SubForm (){
-    $.ajax({
-        url:'https://api.apispreadsheets.com/data/8123/',
-        type:'post',
-        data:$("#myForm").serializeArray(),
-        success: function(){
-          alert("Nice. Your data will be added to my live data :)")
-        },
-        error: function(){
-          alert("There was an error :(")
-        }
-    });
-}
-
-function SubForm1 (){
-    $.ajax({
-        url:'https://api.apispreadsheets.com/data/8124/',
-        type:'post',
-        data:$("#myForm2").serializeArray(),
-        success: function(){
-          alert("Nice. Your data will be added to my live data. :)")
-        },
-        error: function(){
-          alert("There was an error :(")
-        }
-    });
-}
-</script>
+<title>FAQ - 10-Day Questionaire</title>
+<header><a href="home.html">
+  <img src="nextleveldata1.png" width="700px"/> 
+</a></header>
 </head>
 <body onload="myFunction1()" style="margin:0;">
 
-    <div id="loader"></div>
+  <div id="loader"></div>
 
     <div class="topbar">
         <a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a>
-        <a class="active" href="forms.html"><i class="fa fa-fw fa-wpforms"></i>Forms</a>
+        <a href="forms.html"><i class="fa fa-fw fa-wpforms"></i>Forms</a>
         <a href="data.html"><i class="fa fa-fw fa-table"></i>Data</a>
         <a href="about.html"><i class="fa fa-fw fa-user"></i>About</a>
         <div class="dropdown">
-            <button class="dropbtn">More 
+            <button class="dropbtn">More
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
@@ -77,71 +30,44 @@ function SubForm1 (){
             </div>
           </div>
       </div>
-      
-      <div style="padding-left:16px;" class="animate-bottom">
-        <h1 class="h1"><b>FORMS</b></h1>
-        <div class="container"  >
-        <img src="data4.jpg" alt="Data" width="530" height="430">
-        <div>
-            <div class="div">
-                <h2>What is this?</h2>
-                <p>These are the forms that will help adjust my data. If you want to be part of my data, fill up one of the forms below. The responses will be anonymous but will help my data a lot. There will be more forms to come so stay tuned for more. There will be two forms filled with very weird questions. Definitely, these are not for business, but something I want to try out for fun. If you want to check on our previous and current data of the forms, click the button below or click on <em>Data</em> on the tob bar. If you want to see if there are any new upcoming forms, click the button below or click <em>More &rarr; Announcemements</em> on the top bar. Have fun!</p>
-                <a href="data.html"><button class="data" type="button"><b>Data</b></button></a>
-                <a href="announcements.html"><button class="announcements" type="button"><b>Announcements</b></button></a>
-            </div>
-        </div>
-        </div>
+           
+      <div style="padding-left:16px" class="animate-bottom">
+        <h1 class="h1"><b>FAQ</b></h1>
 
         <div class="parallax" id="parallax1"></div>
 
-        <div class="container2">
-            <div>
-                <div class="div2">
-                    <h2>Form 1</h2>
-                    <form id="myForm">
-                        <label id="day1">If you became the president, would you get mcdonalds or kfc?</label><br>
-                        <input type="text" id="q1" name="q1"><br>
-                        <label id="day2">Would you like to fly a paper airplane or a real airplane?</label><br>
-                        <input type="text" id="q2" name="q2"><br>
-                        <label id="day3">Would you like to go to New York or Canada?</label><br>
-                        <input type="text" id="q3" name="q3"><br><br>
-                        <label id="day4">Do you prefer basketballs to be orange or green?</label><br>
-                        <input type="text" id="q4" name="q4"><br><br>
-                        <label id="day5">Is Java a coding language or is it coffee?</label><br>
-                        <input type="text" id="q5" name="q5"><br><br>
-                      </form>
-                      <input type="button" onclick="myFunction()" value="Reset" id="reset1">
-                      <button onclick="SubForm()" id="submit1">Submit</button>
+        <div class="container">
+        <img src="data15.jpg" alt="Sathvik" width="500" height="530">
+        <div>
+            <div class="div">
+                <h2>What is this?</h2>
+                <p>Here are some frequently asked questions about my website. If you have a different question, you can contact me through <a href="contactme.html">here.</a></p>
+                <button class="accordion">How do you fill up a form?</button>
+                <div class="panel">
+                <p>To fill up a form, you can go to our forms section or click <a href="forms.html">this</a>. Then, answer each question and once you are done you can submit. Remember, the question or the forms are not required to be completed. You do what you want to do.</p>
+                </div>
+
+                <button class="accordion">What are those slides in the Data section?</button>
+                <div class="panel">
+                <p>The slides in the Data section are data that I collected before I made this website. Your response won't appear in these slides, but you can get a feel of what these forms are about. If you go to the data section and scroll down to the last section, you can see data from the forms created in this website. If you want to be part of it, go ahead and fill up a form!</p>
+                </div>
+
+                <button class="accordion">Will the forms close in this website?</button>
+                <div class="panel">
+                <p>The forms will not close in this website. You are welcome to fill up a form anytime you want.</p>
+                </div>
+
+                <button class="accordion">Why is my response not showing up in the live data?</button>
+                <div class="panel">
+                <p>When you submit a form, it will go to a google sheet. The google sheet will store that data, but the google sheet in the live data won't update yet unfortuanetely. It may take some time for the data to appear in the live data section. But don't worry, it will show up soon.</p>
                 </div>
             </div>
         </div>
-
-        <div class="parallax" id="parallax2"></div>
-
-        <div class="container3">
-            <div>
-                <div class="div3">
-                    <h2>Form 2</h2>
-                    <form id="myForm2">
-                        <label for="fname" id="day6">Cafeteria serving burgers or restaurant serving broccoli?</label><br>
-                        <input type="text" id="q6" name="q6"><br>
-                        <label for="lname" id="day7">If you had a pool, would you throw your computer or your favorite brownies into the pool?</label><br>
-                        <input type="text" id="q7" name="q7"><br>
-                        <label for="lname"  id="day8">If you had magical powers, would you make a dog quack or make a cat oink?</label><br>
-                        <input type="text" id="q8" name="q8"><br><br>
-                        <label for="lname" id="day9">Would you fly on a Ferrari or your pet chicken?</label><br>
-                        <input type="text" id="q9" name="q9"><br><br>
-                        <label for="lname" id="day10">If you had a purple soccer ball, would you give it to your great grandfather or your great grandson?</label><br>
-                        <input type="text" id="q10" name="q10"><br><br>
-                    </form>
-                    <input type="button" onclick="myFunction()" value="Reset" id="reset1">
-                    <button onclick="SubForm1()" id="submit">Submit</button>
-                </div>
-            </div>
         </div>
         </div>
         <div id="footerFormContainer">
             <p><b>2021 Sathvik Malla</b></p>
           </div>
+          <script src="faq.js"></script>
 </body>
 </html>
