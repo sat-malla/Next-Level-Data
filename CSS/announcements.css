@@ -17,6 +17,10 @@ body {
   margin-bottom: 40px;
   font-size: 60px;
   text-align: center;
+  color: #c85250;
+  font-family: "Niconne", cursive;
+  font-weight: 700;
+  text-shadow: 5px 5px 0px #e9eae0, 10px 10px 0px #f7bec0;
 }
 
 .div {
