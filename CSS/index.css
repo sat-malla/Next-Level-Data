@@ -86,6 +86,30 @@ body {
   font-size: 50px;
 }
 
+.div3 {
+  background-color: #e7625f;
+  color: #e9eae0;
+  padding-left: 40px;
+  padding-top: 60px;
+  width: 680px;
+  height: 200px;
+  margin-left: 110px;
+  padding-right: 30px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.div3 p {
+  line-height: 2;
+  margin-top: 20px;
+}
+.div3 h2 {
+  margin-top: 1px;
+  font-size: 40px;
+  text-align: center;
+  font-size: 50px;
+}
+
 .topbar {
   overflow: hidden;
   background-color: #e7625f;
@@ -178,6 +202,14 @@ body {
   padding-left: 220px;
 }
 
+.container3 {
+  flex-direction: row;
+  display: flex;
+  background-color: #e7625f;
+  margin-right: 20px;
+  height: 410px;
+}
+
 .parallax {
   height: 100%;
 
@@ -195,6 +227,12 @@ body {
 
 #parallax2 {
   background-image: url("data3.jpg");
+  height: 300px;
+  width: 1389px;
+}
+
+#parallax3 {
+  background-image: url("coolbackground.jpg");
   height: 300px;
   width: 1389px;
 }
@@ -221,6 +259,27 @@ body {
 }
 
 .about:hover {
+  background-color: #e9eae0;
+  color: #aa1945;
+}
+
+.haveFun {
+  background-color: #e7625f;
+  border: none;
+  color: #e9eae0;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 40px 2px;
+  cursor: pointer;
+  border: 4px solid black;
+  border-radius: 8px;
+  margin-left: 20px;
+}
+
+.haveFun:hover {
   background-color: #e9eae0;
   color: #aa1945;
 }
