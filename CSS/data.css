@@ -53,9 +53,9 @@ body {
   color: #dc4731;
   padding-left: 40px;
   padding-top: 60px;
-  width: 680px;
+  width: 780px;
   height: 350px;
-  margin-left: 110px;
+  margin-left: 80px;
   padding-right: 30px;
   display: inline-block;
   vertical-align: top;
@@ -136,7 +136,7 @@ body {
   display: flex;
   background-color: #fff3d9;
   margin-right: 20px;
-  height: 630px;
+  height: 690px;
   width: 1389px;
   align-content: center;
   padding-left: 220px;
