@@ -5,8 +5,28 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Next Level Data</title>
-<header><a href="home.html">
-    <img src="nextleveldata1.png" width="700px"/> 
+<div class="topbar">
+  <div class="navbar">
+    <a href="home.html" class="logo">NEXT-LEVEL-DATA</a>
+    <button class="openbtn" onclick="openNav()">☰ More</button>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="rightlinks">
+      <a href="forms.html" class="baritem1"><i class="fa fa-fw fa-wpforms"></i>Forms</a>
+      <a href="data.html" class="baritem1"><i class="fa fa-fw fa-table"></i>Data</a>
+      <a href="about.html" class="baritem2"><i class="fa fa-fw fa-user"></i>About</a>
+      <a href="contactme.html" class="baritem3"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+    </div>
+  </div>
+</div>
+<header class="animate-bottom" style="display: ruby-base-container"><a href="home.html">
+  <img src="homebg.jpg" alt="Home BG" width="1420" height="800">
+  <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="faq.html"><i class="fa fa-fw fa-question-circle"></i> FAQ</a>
+    <a href="announcements.html">Announcements</a>
+    <a href="havefun.html"><i class="fa fa-fw fa-gamepad"></i> Have Fun!</a>
+  </div>
+  
  </a></header>
     <script
     src="https://code.jquery.com/jquery-3.4.1.js"
@@ -24,6 +44,13 @@ function showPage() {
   document.getElementById("myDiv").style.display = "block";
 }
 
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
 
 function SubForm() {
   $.ajax({
@@ -43,27 +70,8 @@ function SubForm() {
 <body onload="myFunction1()" style="margin:0;">
 
     <div id="loader"></div>
-
-    <div class="topbar">
-        <a class="active" href="home.html"><i class="fa fa-fw fa-home"></i>Home</a>
-        <a href="forms.html"><i class="fa fa-fw fa-wpforms"></i>Forms</a>
-        <a href="data.html"><i class="fa fa-fw fa-table"></i>Data</a>
-        <a href="about.html"><i class="fa fa-fw fa-user"></i>About</a>
-        <div class="dropdown">
-            <button class="dropbtn">More    
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="contactme.html"><i class="fa fa-fw fa-envelope"></i> Contact Me</a>
-              <a href="faq.html"><i class="fa fa-fw fa-question-circle"></i> FAQ</a>
-              <a href="announcements.html"><i class="fa fa-fw fa-bullhorn"></i> Announcements</a>
-              <a href="havefun.html"><i class="fa fa-fw fa-gamepad"></i> Have Fun!</a>
-            </div>
-          </div>
-      </div>
-      
-      <div style="padding-left:16px" id="myDiv" class="animate-bottom">
-        <div class="h1"><b>HOME</b></div>
+    
+      <div style="padding-left:16px" id="myDiv">
         <div class="container4">
         <a href="forms.html">
         <div class="flip-card">
@@ -75,7 +83,7 @@ function SubForm() {
               <div class="flip-card-back">
                 <h1>What is it?</h1> 
                 <p>Fill some forms and check others' data</p> 
-                <p>Learn More: <em>Forms & Data</em> on menu bar.</p>
+                <p>Learn More: <em>Forms & Data</em></p>
               </div>
             </div>
           </div>
@@ -91,7 +99,7 @@ function SubForm() {
               <div class="flip-card1-back">
                 <h1>What is it?</h1> 
                 <p>Some cool info about me to inspire you.</p> 
-                <p>Learn More: <em>About</em> on menu bar.</p>
+                <p>Learn More: <em>About</em></p>
               </div>
             </div>
           </div>
@@ -106,7 +114,7 @@ function SubForm() {
               <div class="flip-card2-back">
                 <h1>What is it?</h1> 
                 <p>If you have questions, contact me.</p> 
-                <p>Contact Me: <em>Contact Me</em> on menu bar.</p>
+                <p>Contact Me: <em>Contact Me</em></p>
               </div>
             </div>
         </div>
@@ -121,7 +129,7 @@ function SubForm() {
               <div class="flip-card3-back">
                 <h1>What is it?</h1> 
                 <p>If you want more, play some Games</p> 
-                <p>Play here: <em>Have Fun!</em> on menu bar.</p>
+                <p>Play here: <em>Have Fun!</em></p>
               </div>
             </div>
           </div>
@@ -195,7 +203,7 @@ function SubForm() {
         </div>
         <div id="footerFormContainer">
             <p><b>2021 Sathvik Malla</b></p>
-            <img src="datalogo.png" alt="Next-Level-Data Logo" width="120px">
+            <img src="datalogo.png" width="130" height="140">
           </div>
 </body>
 </html>
