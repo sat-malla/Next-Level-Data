@@ -5,9 +5,31 @@
     <link rel="stylesheet" href="announcements.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Announcements - Next Level Data</title>
-<header><a href="home.html">
+<div class="topbar">
+    <div class="navbar">
+      <a href="home.html" class="logo">NEXT-LEVEL-DATA</a>
+      <button class="openbtn" onclick="openNav()">☰ More</button>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="rightlinks">
+        <a href="forms.html" class="baritem1"><i class="fa fa-fw fa-wpforms"></i>Forms</a>
+        <a href="data.html" class="baritem1"><i class="fa fa-fw fa-table"></i>Data</a>
+        <a href="about.html" class="baritem2"><i class="fa fa-fw fa-user"></i>About</a>
+        <a href="contactme.html" class="baritem3"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <header><a href="home.html">
     <img src="nextleveldata1.png" width="700px"/> 
- </a></header>
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="faq.html"><i class="fa fa-fw fa-question-circle"></i> FAQ</a>
+      <a href="announcements.html">Announcements</a>
+      <a href="havefun.html"><i class="fa fa-fw fa-gamepad"></i> Have Fun!</a>
+    </div>
+  </a></header>
     <script>
 
         var myVar;
@@ -20,29 +42,18 @@
           document.getElementById("loader").style.display = "none";
           document.getElementById("myDiv").style.display = "block";
         }
+        function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
     </script>
 </head>
 <body onload="myFunction1()" style="margin:0;">
 
     <div id="loader"></div>
-
-    <div class="topbar">
-        <a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a>
-        <a href="forms.html"><i class="fa fa-fw fa-wpforms"></i>Forms</a>
-        <a href="data.html"><i class="fa fa-fw fa-table"></i>Data</a>
-        <a href="about.html"><i class="fa fa-fw fa-user"></i>About</a>
-        <div class="dropdown">
-            <button class="dropbtn">More 
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="contactme.html"><i class="fa fa-fw fa-envelope"></i> Contact Me</a>
-              <a href="faq.html"><i class="fa fa-fw fa-question-circle"></i> FAQ</a>
-              <a href="announcements.html"><i class="fa fa-fw fa-bullhorn"></i> Announcements</a>
-              <a href="havefun.html"><i class="fa fa-fw fa-gamepad"></i> Have Fun!</a>
-            </div>
-          </div>
-      </div>
       
       <div style="padding-left:16px" class="animate-bottom">
         <div class="h1"><b>ANNOUNCEMENTS</b></div>
@@ -55,7 +66,7 @@
         <div>
             <div class="div">
                 <h2>What is this?</h2>
-                <p>This is the announcements section. If there is a new update, something like a new form or a new feature, it will be listed here. Learn the information about it here and what to do with it. I will also tell you how to get to that new feature or that new form. I will also keep you posted if there are any upcoming updates in the announcements so stay tuned! Enjoy the current forms and the data, but there is a new update! Scroll down below to read more about it! </p>
+                <p>This is the announcements section. If there is a new update, something like a new form or a new feature, it will be listed here. Learn the information about it here and what to do with it. I will also tell you how to get to that new feature or that new form. I will also keep you posted if there are any upcoming updates in the announcements so stay tuned! Enjoy the current forms and the data.</p>
                 <a href="forms.html"><button class="form" type="button"><b>Forms</b></button></a>
                 <a href="data.html"><button class="data" type="button"><b>Data</b></button></a>
             </div>
@@ -84,6 +95,12 @@
                 <p>First of all, if you didn't notice, I have a brand name and icon on the top, and the official name of this website is NEXTLEVELDATA. Click that to go to <em>Home</em>. I am also excited to show a new feature in this website. If you go to <em>More</em>, you will see a new feature called <em>Have Fun!</em> If you are bored of the forms and the data presented here, we have some entertainment for you. We got Drag & Drop, Choose Which, and a Flappy Square game which is the best game of all. Click the button down below to visit it! I also added a loading feature to all of the pages so it will tell you whether the whole page is loaded or not. The <em>About</em> page will take a little time to load because of my passions collage. But, I hope you like it!</p>
                 <a href="havefun.html"><button class="data" type="button"><b>Have Fun!</b></button></a>
                 <br>
+                <hr id="hr">
+                <h3 style="text-align: center;">Topic: New Navigation Bar</h3>
+                <h5>Time: 9:47:38 AM</h5>
+                <h5>Day: February 22, 2021</h5>
+                <h5>Author: Sathvik Malla</h5>
+                <p>The previous navigation bar wasn't that great or wasn't nice to see and look at. So, I decided to change the navigation bar and some of the home page too. The <em>More</em> dropdown is gone but if you click <em>☰ More</em> on the navigation bar, there will be a popup coming from the left and that can direct you to your desired page. If you want to go to home, click <em>NEXT-LEVEL-DATA</em>. I also added some more changes and fixed some bugs. That's all for this update.</p>
                 <hr id="hr">
             </div>
         </div>
