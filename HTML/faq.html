@@ -5,31 +5,35 @@
     <link rel="stylesheet" href="faq.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>FAQ - Next Level Data</title>
+<div class="topbar">
+  <div class="navbar">
+    <a href="home.html" class="logo">NEXT-LEVEL-DATA</a>
+    <button class="openbtn" onclick="openNav()">☰ More</button>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="rightlinks">
+      <a href="forms.html" class="baritem1"><i class="fa fa-fw fa-wpforms"></i>Forms</a>
+      <a href="data.html" class="baritem1"><i class="fa fa-fw fa-table"></i>Data</a>
+      <a href="about.html" class="baritem2"><i class="fa fa-fw fa-user"></i>About</a>
+      <a href="contactme.html" class="baritem3"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
 <header><a href="home.html">
   <img src="nextleveldata1.png" width="700px"/> 
+  <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="faq.html"><i class="fa fa-fw fa-question-circle"></i> FAQ</a>
+    <a href="announcements.html">Announcements</a>
+    <a href="havefun.html"><i class="fa fa-fw fa-gamepad"></i> Have Fun!</a>
+  </div>
 </a></header>
 </head>
 <body onload="myFunction1()" style="margin:0;">
 
   <div id="loader"></div>
-
-    <div class="topbar">
-        <a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a>
-        <a href="forms.html"><i class="fa fa-fw fa-wpforms"></i>Forms</a>
-        <a href="data.html"><i class="fa fa-fw fa-table"></i>Data</a>
-        <a href="about.html"><i class="fa fa-fw fa-user"></i>About</a>
-        <div class="dropdown">
-            <button class="dropbtn">More
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="contactme.html"><i class="fa fa-fw fa-envelope"></i> Contact Me</a>
-              <a href="faq.html"><i class="fa fa-fw fa-question-circle"></i> FAQ</a>
-              <a href="announcements.html"><i class="fa fa-fw fa-bullhorn"></i> Announcements</a>
-              <a href="havefun.html"><i class="fa fa-fw fa-gamepad"></i> Have Fun!</a>
-            </div>
-          </div>
-      </div>
            
       <div style="padding-left:16px" class="animate-bottom">
         <div class="h1"><b>FAQ</b></div>
