@@ -21,6 +21,15 @@ header {
   transform: translate(-50%, -50%);
 }
 
+.shadow {
+  position: absolute;
+  width: 1425px;
+  height: 802px;
+  box-shadow: inset 3px 3px 10px 0 #000000;
+  top: 0;
+  left: 0;
+}
+
 #btn {
   background-color: #e7625f;
   border: none;
