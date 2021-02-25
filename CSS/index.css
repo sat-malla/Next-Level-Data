@@ -5,6 +5,42 @@ header {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
+#box {
+  position: relative;
+  width: 100%;
+  max-width: 250px;
+}
+#box img {
+  height: auto;
+}
+#box #btn {
+  position: absolute;
+  top: 70%;
+  left: 280%;
+  transform: translate(-50%, -50%);
+}
+
+#btn {
+  background-color: #e7625f;
+  border: none;
+  color: #e9eae0;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 25px 2px;
+  cursor: pointer;
+  border: 4px solid black;
+  border-radius: 8px;
+}
+
+#btn:hover {
+  background-color: #e9eae0;
+  color: #aa1945;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 html {
   scroll-behavior: smooth;
 }
@@ -652,7 +688,7 @@ textarea {
   transform: rotateY(180deg);
 }
 
-.container4 {
+#container4 {
   flex-direction: row;
 }
 
@@ -709,4 +745,49 @@ textarea {
   height: 50px;
   margin-top: 4px;
   padding: 12px 12px;
+}
+
+#goBack {
+  background-color: #e7625f;
+  border: none;
+  color: #e9eae0;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 5px 2px;
+  cursor: pointer;
+  border: 4px solid black;
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+#goBack:hover {
+  background-color: #e9eae0;
+  color: #aa1945;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.centered {
+  position: absolute;
+  top: 60%;
+  left: 280%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.centeredp {
+  position: absolute;
+  top: 63%;
+  left: 280%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  width: 500px;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
