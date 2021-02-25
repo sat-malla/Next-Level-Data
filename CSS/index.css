@@ -16,7 +16,7 @@ header {
 }
 #box #btn {
   position: absolute;
-  top: 70%;
+  top: 75%;
   left: 280%;
   transform: translate(-50%, -50%);
 }
@@ -771,7 +771,7 @@ textarea {
 
 .centered {
   position: absolute;
-  top: 60%;
+  top: 65%;
   left: 280%;
   transform: translate(-50%, -50%);
   width: 500px;
@@ -782,7 +782,7 @@ textarea {
 
 .centeredp {
   position: absolute;
-  top: 63%;
+  top: 68%;
   left: 280%;
   transform: translate(-50%, -50%);
   font-size: 20px;
