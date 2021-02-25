@@ -18,15 +18,17 @@
     </div>
   </div>
 </div>
-<header class="animate-bottom" style="display: ruby-base-container">
+<header class="animate-bottom" id="box" style="display: ruby-base-container">
   <img src="homebg.jpg" alt="Home BG" width="1420" height="800">
+  <a href="#container4"><button id="btn"><i class="fa fa-fw fa-chevron-down"></i></button></a>
+  <div class="centered">Scroll Down</div>
+  <p class="centeredp">It may take some time</p>
   <div id="mySidepanel" class="sidepanel">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
     <a href="faq.html"><i class="fa fa-fw fa-question-circle"></i> FAQ</a>
     <a href="announcements.html">Announcements</a>
     <a href="havefun.html"><i class="fa fa-fw fa-gamepad"></i> Have Fun!</a>
   </div>
-  
  </header>
     <script
     src="https://code.jquery.com/jquery-3.4.1.js"
@@ -52,6 +54,43 @@ function closeNav() {
   document.getElementById("mySidepanel").style.width = "0";
 }
 
+$('a[href*="#container4"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+
+
 function SubForm() {
   $.ajax({
     url: "https://api.apispreadsheets.com/data/8126/",
@@ -72,7 +111,7 @@ function SubForm() {
     <div id="loader"></div>
     
       <div style="padding-left:16px" id="myDiv">
-        <div class="container4">
+        <div id="container4">
         <a href="forms.html">
         <div class="flip-card">
             <div class="flip-card-inner">
@@ -205,5 +244,6 @@ function SubForm() {
             <p><b>2021 Sathvik Malla</b></p>
             <img src="datalogo.png" width="130" height="140">
           </div>
+        <script src="index.js"></script>
 </body>
 </html>
