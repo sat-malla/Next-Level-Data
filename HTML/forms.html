@@ -11,7 +11,7 @@
     <!-- Float links to the right. Hide them on small screens -->
     <div class="rightlinks">
       <a href="forms.html" class="baritem1"><i class="fa fa-fw fa-wpforms"></i>Forms</a>
-      <a href="data.html" class="baritem1"><i class="fa fa-fw fa-table"></i>Data</a>
+      <a href="data.html" class="baritem4"><i class="fa fa-fw fa-table"></i>Data</a>
       <a href="about.html" class="baritem2"><i class="fa fa-fw fa-user"></i>About</a>
       <a href="contactme.html" class="baritem3"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
       <button class="openbtn" onclick="openNav()">☰ More</button>
@@ -41,7 +41,7 @@ function myFunction1() {
   myVar = setTimeout(showPage, 500);
 }
 
-var countDownDate = new Date("Feb 26, 2021 11:59:00").getTime();
+var countDownDate = new Date("Feb 26, 2021 11:59:00 PM").getTime();
 
 // Update the count down every 1 second
 var countdownfunction = setInterval(function() {
@@ -76,6 +76,7 @@ function showPage() {
 function myFunction() {
   document.getElementById("myForm").reset();
   document.getElementById("myForm2").reset();
+  document.getElementById("myForm3").reset();
 }
 
 function openNav() {
@@ -106,6 +107,20 @@ function SubForm1 (){
         url:'https://api.apispreadsheets.com/data/8124/',
         type:'post',
         data:$("#myForm2").serializeArray(),
+        success: function(){
+          alert("Nice. Your data will be added to my live data. :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+
+function SubForm2 (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/8124/',
+        type:'post',
+        data:$("#myForm3").serializeArray(),
         success: function(){
           alert("Nice. Your data will be added to my live data. :)")
         },
@@ -188,19 +203,20 @@ function SubForm1 (){
           <div>
               <div class="div4">
                   <h2>Form 3</h2>
-                  <div class="bgimg">
-                    <div class="topleft">
-                      <p>Next-Level-Data</p>
-                    </div>
-                    <div class="middle">
-                      <h1>COMING SOON</h1>
-                      <hr>
-                      <p id="demo" style="font-size:30px"></p>
-                    </div>
-                    <div class="bottomleft">
-                      <p>New Form Coming Soon!</p>
-                    </div>
-                  </div>
+                  <form id="myForm3">
+                      <label for="fname" id="day11">Iphone 12 or Samsung S21?</label><br>
+                      <input type="text" id="q11" name="q11"><br>
+                      <label for="lname" id="day12">If it was your birthday, do you prefer cake or cookies?</label><br>
+                      <input type="text" id="q12" name="q12"><br>
+                      <label for="lname"  id="day13">Would you spend your time learning card tricks or origami?</label><br>
+                      <input type="text" id="q13" name="q13"><br><br>
+                      <label for="lname" id="day14">Would you buy an Acura or the most delicious 10-story cake?</label><br>
+                      <input type="text" id="q14" name="q14"><br><br>
+                      <label for="lname" id="day15">Should you be pretty sure or certain?</label><br>
+                      <input type="text" id="q15" name="q15"><br><br>
+                  </form>
+                  <input type="button" onclick="myFunction()" value="Reset" id="reset1">
+                  <button onclick="SubForm2()" id="submit">Submit</button>
               </div>
           </div>
       </div>
