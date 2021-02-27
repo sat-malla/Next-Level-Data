@@ -75,11 +75,11 @@ body {
 .div3 {
   background-color: #fff5d7;
   color: #f36870;
-  padding-left: 40px;
+  padding-left: 0px;
   padding-top: 60px;
   width: 800px;
   height: 350px;
-  margin-right: 10px;
+  margin-right: 0px;
   padding-right: 30px;
   display: inline-block;
   vertical-align: top;
@@ -90,6 +90,30 @@ body {
   margin-top: 20px;
 }
 .div3 h2 {
+  margin-top: 1px;
+  font-size: 40px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.div4 {
+  background-color: #fff5d7;
+  color: #f36870;
+  padding-left: 40px;
+  padding-top: 60px;
+  width: 800px;
+  height: 350px;
+  margin-right: 10px;
+  padding-right: 30px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.div4 p {
+  line-height: 2;
+  margin-top: 20px;
+}
+.div4 h2 {
   margin-top: 1px;
   font-size: 40px;
   text-align: center;
@@ -228,7 +252,18 @@ body {
   height: 680px;
   width: 1389px;
   align-content: center;
-  padding-left: 320px;
+  padding-left: 350px;
+}
+
+.container4 {
+  flex-direction: row;
+  display: flex;
+  background-color: #fff5d7;
+  margin-right: 15px;
+  height: 740px;
+  width: 1389px;
+  align-content: center;
+  padding-left: 310px;
 }
 
 .parallax {
@@ -255,6 +290,12 @@ body {
 
 #parallax3 {
   background-image: url("data12.jpg");
+  height: 300px;
+  width: 1389px;
+}
+
+#parallax4 {
+  background-image: url("data27.jpg");
   height: 300px;
   width: 1389px;
 }
