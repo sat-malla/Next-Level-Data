@@ -553,8 +553,8 @@ textarea {
 }
 
 .flip-card-back {
-  background-color: #821d30;
-  color: #f7d6d0;
+  background-color: #e9eae0;
+  color: #057dcd;
   transform: rotateY(180deg);
 }
 
@@ -600,8 +600,8 @@ textarea {
 }
 
 .flip-card1-back {
-  background-color: #821d30;
-  color: #f7d6d0;
+  background-color: #e9eae0;
+  color: #057dcd;
   transform: rotateY(180deg);
 }
 
@@ -646,8 +646,8 @@ textarea {
 }
 
 .flip-card2-back {
-  background-color: #821d30;
-  color: #f7d6d0;
+  background-color: #e9eae0;
+  color: #057dcd;
   transform: rotateY(180deg);
 }
 
@@ -692,8 +692,8 @@ textarea {
 }
 
 .flip-card3-back {
-  background-color: #821d30;
-  color: #f7d6d0;
+  background-color: #e9eae0;
+  color: #057dcd;
   transform: rotateY(180deg);
 }
 
