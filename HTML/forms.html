@@ -59,6 +59,38 @@ function closeNav() {
   document.getElementById("mySidepanel").style.width = "0";
 }
 
+$(function()
+{
+  $('#submit1').click(function () {
+    $(this).html('<i class="fa fa-fw fa-circle-o-notch fa-spin"></i>');
+    return false;
+    setTimeout(function() {
+       $this.button('#submit1');
+   }, 1000);
+  })
+})
+
+$(function()
+{
+  $('#submit').click(function () {
+    $(this).html('<i class="fa fa-fw fa-circle-o-notch fa-spin"></i>');
+    return false;
+    setTimeout(function() {
+       $this.button('#submit');
+   }, 1000);
+  })
+})
+
+$(function()
+{
+  $('#submit2').click(function () {
+    $(this).html('<i class="fa fa-fw fa-circle-o-notch fa-spin"></i>');
+    return false;
+    setTimeout(function() {
+       $this.button('#submit2');
+   }, 1000);
+  })
+})
 
 function SubForm (){
     $.ajax({
@@ -66,7 +98,7 @@ function SubForm (){
         type:'post',
         data:$("#myForm").serializeArray(),
         success: function(){
-          alert("Nice. Your data will be added to my live data :)")
+          window.location.href='thank-you.html';
         },
         error: function(){
           alert("There was an error :(")
@@ -80,7 +112,7 @@ function SubForm1 (){
         type:'post',
         data:$("#myForm2").serializeArray(),
         success: function(){
-          alert("Nice. Your data will be added to my live data. :)")
+          window.location.href='thank-you.html';
         },
         error: function(){
           alert("There was an error :(")
@@ -94,7 +126,7 @@ function SubForm2 (){
         type:'post',
         data:$("#myForm3").serializeArray(),
         success: function(){
-          alert("Nice. Your data will be added to my live data. :)")
+          window.location.href='thank-you.html';
         },
         error: function(){
           alert("There was an error :(")
@@ -127,7 +159,7 @@ function SubForm2 (){
             <div>
                 <div class="div2">
                     <h2>Form 1</h2>
-                    <form id="myForm">
+                    <form id="myForm" action="thank-you.php" method="POST">
                         <label id="day1">If you became the president, would you get mcdonalds or kfc?</label><br>
                         <input type="text" id="q1" name="q1"><br>
                         <label id="day2">Would you like to fly a paper airplane or a real airplane?</label><br>
@@ -188,7 +220,7 @@ function SubForm2 (){
                       <input type="text" id="q15" name="q15"><br><br>
                   </form>
                   <input type="button" onclick="myFunction()" value="Reset" id="reset1">
-                  <button onclick="SubForm2()" id="submit">Submit</button>
+                  <button onclick="SubForm2()" id="submit2">Submit</button>
               </div>
           </div>
       </div>
