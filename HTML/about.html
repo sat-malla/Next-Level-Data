@@ -54,13 +54,25 @@ function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
 }
-        function SubForm() {
+
+$(function()
+{
+  $('#submit1').click(function () {
+    $(this).html('<i class="fa fa-fw fa-circle-o-notch fa-spin"></i>');
+    return false;
+    setTimeout(function() {
+       $this.button('#submit1');
+   }, 1000);
+  })
+})
+
+function SubForm() {
   $.ajax({
     url: "https://api.apispreadsheets.com/data/8127/",
     type: "post",
     data: $("#myForm").serializeArray(),
     success: function () {
-      alert("Nice. Thanks for your response! :)");
+      window.location.href='thank-you3.html';
     },
     error: function () {
       alert("There was an error :(");
