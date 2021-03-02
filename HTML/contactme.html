@@ -55,13 +55,24 @@ function showPage() {
   document.getElementById("myDiv").style.display = "block";
 }
 
-        function SubForm() {
+$(function()
+{
+  $('#submit').click(function () {
+    $(this).html('<i class="fa fa-fw fa-circle-o-notch fa-spin"></i>');
+    return false;
+    setTimeout(function() {
+       $this.button('#submit');
+   }, 1000);
+  })
+})
+
+function SubForm() {
   $.ajax({
     url: "https://api.apispreadsheets.com/data/8126/",
     type: "post",
     data: $("#myForm").serializeArray(),
     success: function () {
-      alert("Nice. We will respond to you as soon as possible via email. :)");
+      window.location.href='thank-you2.html';
     },
     error: function () {
       alert("There was an error :(");
