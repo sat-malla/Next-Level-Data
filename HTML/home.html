@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Next Level Data</title>
 <div class="topbar">
-  <div class="navbar">
     <a href="home.html" class="logo">NEXT-LEVEL-DATA</a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="rightlinks">
@@ -16,7 +15,6 @@
       <a href="contactme.html" class="baritem3"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
       <button class="openbtn" onclick="openNav()">☰ More</button>
     </div>
-  </div>
 </div>
 <header class="animate-bottom" id="box" style="display: ruby-base-container">
   <img src="homebg.jpg" alt="Home BG" width="1425" height="800">
@@ -91,6 +89,16 @@ $('a[href*="#container4"]')
     }
   });
 
+$(function()
+{
+  $('#submit').click(function () {
+    $(this).html('<i class="fa fa-fw fa-circle-o-notch fa-spin"></i>');
+    return false;
+    setTimeout(function() {
+       $this.button('#submit');
+   }, 1000);
+  })
+})
 
 function SubForm() {
   $.ajax({
@@ -98,7 +106,7 @@ function SubForm() {
     type: "post",
     data: $("#myForm").serializeArray(),
     success: function () {
-      alert("Nice. We will respond to you as soon as possible via email. :)");
+      window.location.href='thank-you1.html';
     },
     error: function () {
       alert("There was an error :(");
@@ -186,7 +194,7 @@ function SubForm() {
             <div class="div">
                 <h2>What is this?</h2>
                 <p>Every day, I collect data from a certain amount of students. I create slides and documents of the data and make some cool stuff out of it like pie charts. If you want to fill up a form, click the red button down below or click <em>Forms</em> on the top bar. If you want to see the data of those forms, click the white button down below or click <em>Data</em> on the top bar. One response can make a big deal in my data.</p>
-                <a href="forms.html"><button class="form" type="button"><b>Forms</b></button></a>
+                <a href="forms.html"><button class="form button--glow" type="button"><b>Forms</b></button></a>
                 <a href="data.html"><button class="data" type="button"><b>Data</b></button></a>
             </div>
         </div>
