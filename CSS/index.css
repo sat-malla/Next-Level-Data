@@ -598,10 +598,11 @@ textarea {
 .flip-card-front {
   background-color: #e7625f;
   color: #e9eae0;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .flip-card-back {
-  background-color: #e9eae0;
+  background-color: white;
   color: #057dcd;
   transform: rotateY(180deg);
 }
@@ -645,10 +646,11 @@ textarea {
 .flip-card1-front {
   background-color: #e7625f;
   color: #e9eae0;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .flip-card1-back {
-  background-color: #e9eae0;
+  background-color: white;
   color: #057dcd;
   transform: rotateY(180deg);
 }
@@ -691,10 +693,11 @@ textarea {
 .flip-card2-front {
   background-color: #e7625f;
   color: #e9eae0;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .flip-card2-back {
-  background-color: #e9eae0;
+  background-color: white;
   color: #057dcd;
   transform: rotateY(180deg);
 }
@@ -737,10 +740,11 @@ textarea {
 .flip-card3-front {
   background-color: #e7625f;
   color: #e9eae0;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .flip-card3-back {
-  background-color: #e9eae0;
+  background-color: white;
   color: #057dcd;
   transform: rotateY(180deg);
 }
