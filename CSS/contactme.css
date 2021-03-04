@@ -12,6 +12,10 @@ body {
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .h1 {
   margin-top: 30px;
   margin-bottom: 40px;
@@ -28,7 +32,7 @@ body {
   color: #e9eae0;
   padding-left: 40px;
   padding-top: 60px;
-  width: 680px;
+  width: 1210px;
   height: 350px;
   margin-left: 110px;
   padding-right: 30px;
@@ -42,9 +46,9 @@ body {
 }
 .div2 h2 {
   margin-top: 1px;
-  font-size: 40px;
   text-align: center;
   font-size: 50px;
+  padding-right: 90px;
 }
 
 .topbar {
@@ -63,6 +67,22 @@ body {
   float: left;
   margin-left: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.baritem1::after {
+  border-color: #21b6a8;
+  border-top-width: 0.26rem;
+  width: 100px;
+  margin-left: 1213px;
+  border-top-style: solid;
+  -webkit-border-radius: 0.15px 0.15px 0 0;
+  border-radius: 0.15px 0.15px 0 0;
+  bottom: -0.125rem;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
 }
 
 .rightlinks {
@@ -139,32 +159,8 @@ body {
   flex-direction: row;
   display: flex;
   background-color: #e7625f;
-  margin-right: 20px;
-  height: 1060px;
-  align-content: center;
-  padding-left: 220px;
-}
-
-.parallax {
-  height: 100%;
-
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#parallax1 {
-  background-image: url("data16.jpg");
-  background-attachment: local;
-  height: 300px;
-  width: 1389px;
-}
-
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
-  }
+  height: 960px;
+  padding-left: 20px;
 }
 
 input[type="text"] {
@@ -210,6 +206,18 @@ textarea {
 
 #p {
   font-size: 18px;
+  padding-right: 60px;
+  width: 500px;
+}
+
+#img {
+  padding-right: 20px;
+  width: 500px;
+}
+
+.contact {
+  padding-left: 620px;
+  margin-top: -615px;
 }
 
 #submit {
@@ -225,7 +233,7 @@ textarea {
   cursor: pointer;
   border: 4px solid black;
   font-weight: bold;
-  margin-left: 270px;
+  margin-left: 850px;
   border-radius: 8px;
 }
 
