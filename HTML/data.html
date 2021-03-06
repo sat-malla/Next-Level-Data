@@ -30,6 +30,35 @@
     <a href="havefun.html"><i class="fa fa-fw fa-gamepad"></i> Have Fun!</a>
   </div>
 </a></header>
+<script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script>
+      $(function () {
+  $("#join").click(function () {
+    $(this).html('<i class="fa fa-fw fa-circle-o-notch fa-spin"></i>');
+    return false;
+    setTimeout(function () {
+      $this.button("#join");
+    }, 1000);
+  });
+});
+
+function SubForm() {
+  $.ajax({
+    url: "https://api.apispreadsheets.com/data/8126/",
+    type: "post",
+    data: $("#myForm").serializeArray(),
+    success: function () {
+      window.location.href = "thank-you1.html";
+    },
+    error: function () {
+      alert("There was an error :(");
+    },
+  });
+}
+      </script>
 </head>
 <body onload="myFunction1()" style="margin:0;">
 
@@ -175,10 +204,44 @@
           </div>     
         </div>
         </div>
-        <div id="footerFormContainer">
-            <p><b>2021 Sathvik Malla</b></p>
-            <img src="datalogo.png" alt="Next-Level-Data Logo" width="120px">
+        <hr id="hr">
+        <div class="footerContainer">
+          <img src="datalogo1.png" style="float: left; margin-left: 10px;" width="130" height="140">
+          <div class="leftCol">
+            <p id="footerP">Support</p>
+            <p class="footerLink"><a href="contactme.html">Contact Me</a></p>
+            <p class="footerLink1"><a href="announcements.html">Announcemements</a></p>
+            <p class="footerLink2"><a href="faq.html">FAQ</a></p>
           </div>
+          <div class="milCol">
+            <div class="footerP1">Join Email List!
+              <span class="toolTip">Join our Email List to get notifications about our upcoming updates and more!</span>
+            </div>
+            <form id="myForm">
+              <input type="email" style="width:300px;" placeholder="Email" name="email" id="input">
+            </form>
+            <button onclick="SubForm()" id="join">Join</button>
+          </div>
+          <div class="rightCol">
+            <p id="footerP">Website</p>
+            <p class="footerLink"><a href="forms.html">Forms</a></p>
+            <p class="footerLink3"><a href="data.html">Data</a></p>
+            <p class="footerLink4"><a href="about.html">About</a></p>
+          </div>
+          <div class="aboutCol">
+            <p id="footerP2">Tags</p>
+            <div>
+              <span id="tag">Forms</span>
+              <span id="tag">Data</span>
+              <span id="tag">Games</span>
+              <span id="tag">Have- Fun!</span>
+              <span id="tag">Next-Level-Data</span>
+              <span id="tag">NEXT-LEVEL-DATA</span>
+              <span id="tag" >NEXTLEVELDATA</span>
+            </div>
+          </div>
+          <p style="text-align: center; margin-top: 75px;">2021 Next-Level-Data</p>
+        </div>
 
           <script src="data.js"></script>
 </body>
