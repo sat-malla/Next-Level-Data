@@ -161,6 +161,7 @@ body {
   padding: 20px 16px;
   text-decoration: none;
   font-size: 17px;
+  transition: 0.2s;
 }
 
 .topbar a:hover {
@@ -209,6 +210,7 @@ body {
   padding: 12px 12px;
   border: none;
   margin-top: 4px;
+  transition: 0.2s;
 }
 
 .openbtn:hover {
