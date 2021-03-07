@@ -98,6 +98,7 @@ body {
   padding: 20px 16px;
   text-decoration: none;
   font-size: 17px;
+  transition: 0.2s;
 }
 
 .topbar a:hover {
@@ -147,6 +148,7 @@ body {
   padding: 12px 12px;
   border: none;
   margin-top: 4px;
+  transition: 0.2s;
 }
 
 .openbtn:hover {
@@ -203,12 +205,6 @@ body {
   }
 }
 
-#footerFormContainer {
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
 .form {
   background-color: #e7625f;
   border: none;
@@ -222,6 +218,7 @@ body {
   cursor: pointer;
   border: 4px solid black;
   border-radius: 8px;
+  transition: 0.2s;
 }
 
 .form:hover {
@@ -244,6 +241,7 @@ body {
   border: 4px solid black;
   margin-left: 20px;
   border-radius: 8px;
+  transition: 0.2s;
 }
 
 .data:hover {
@@ -594,32 +592,6 @@ body {
 }
 
 .footerLink4 a:hover {
-  opacity: 1;
-  color: #21b6a8;
-}
-.footerLink5 {
-  margin-top: -220px;
-  font-weight: 500;
-  margin-left: 86px;
-  font-size: 20px;
-  list-style-type: none;
-  float: left;
-  text-align: left;
-  line-height: 2;
-  display: list-item;
-}
-
-.footerLink5 a {
-  color: black;
-  transition: 0.3s;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  margin-top: 50px;
-  text-decoration: none;
-  line-height: 2;
-}
-
-.footerLink5 a:hover {
   opacity: 1;
   color: #21b6a8;
 }
