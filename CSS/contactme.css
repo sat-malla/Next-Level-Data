@@ -44,12 +44,6 @@ html {
   line-height: 2;
   margin-top: 20px;
 }
-.div2 h2 {
-  margin-top: 1px;
-  text-align: center;
-  font-size: 50px;
-  padding-right: 90px;
-}
 
 .topbar {
   overflow: hidden;
@@ -96,6 +90,7 @@ html {
   padding: 20px 16px;
   text-decoration: none;
   font-size: 17px;
+  transition: 0.2s;
 }
 
 .topbar a:hover {
@@ -145,6 +140,7 @@ html {
   padding: 12px 12px;
   border: none;
   margin-top: 4px;
+  transition: 0.2s;
 }
 
 .openbtn:hover {
@@ -235,6 +231,7 @@ textarea {
   font-weight: bold;
   margin-left: 850px;
   border-radius: 8px;
+  transition: 0.2s;
 }
 
 #submit:hover {
@@ -244,11 +241,6 @@ textarea {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#footerFormContainer {
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
 
 #loader {
   position: absolute;
@@ -589,32 +581,7 @@ textarea {
   opacity: 1;
   color: #21b6a8;
 }
-.footerLink5 {
-  margin-top: -220px;
-  font-weight: 500;
-  margin-left: 86px;
-  font-size: 20px;
-  list-style-type: none;
-  float: left;
-  text-align: left;
-  line-height: 2;
-  display: list-item;
-}
 
-.footerLink5 a {
-  color: black;
-  transition: 0.3s;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  margin-top: 50px;
-  text-decoration: none;
-  line-height: 2;
-}
-
-.footerLink5 a:hover {
-  opacity: 1;
-  color: #21b6a8;
-}
 
 #input[type="email"] {
   width: 100%;
