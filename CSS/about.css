@@ -96,30 +96,6 @@ body {
   font-size: 50px;
 }
 
-.div4 {
-  background-color: #fff5d7;
-  color: #f36870;
-  padding-left: 40px;
-  padding-top: 60px;
-  width: 800px;
-  height: 350px;
-  margin-right: 10px;
-  padding-right: 30px;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.div4 p {
-  line-height: 2;
-  margin-top: 20px;
-}
-.div4 h2 {
-  margin-top: 1px;
-  font-size: 40px;
-  text-align: center;
-  font-size: 50px;
-}
-
 .topbar {
   overflow: hidden;
   position: fixed;
@@ -165,6 +141,7 @@ body {
   padding: 20px 16px;
   text-decoration: none;
   font-size: 17px;
+  transition: 0.2s;
 }
 
 .topbar a:hover {
@@ -214,6 +191,7 @@ body {
   padding: 12px 12px;
   border: none;
   margin-top: 4px;
+  transition: 0.2s;
 }
 
 .openbtn:hover {
@@ -362,6 +340,7 @@ img {
   font-weight: bold;
   margin-left: 1px;
   border-radius: 8px;
+  transition: 0.2s;
 }
 
 #submit1:hover {
@@ -386,6 +365,7 @@ img {
   font-weight: bold;
   margin-left: 583px;
   border-radius: 8px;
+  transition: 0.2s;
 }
 
 #openModal:hover {
